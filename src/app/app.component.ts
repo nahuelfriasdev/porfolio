@@ -5,11 +5,12 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { CommonModule } from '@angular/common';
+import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavBarComponent, PerfilComponent, ExperienciaComponent, ProyectosComponent],
+  imports: [CommonModule, RouterOutlet, NavBarComponent, PerfilComponent, ExperienciaComponent, ProyectosComponent, TecnologiasComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
