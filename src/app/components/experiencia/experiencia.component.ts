@@ -17,7 +17,6 @@ export class ExperienciaComponent implements OnInit{
   ngOnInit(): void {
     this._data.getData().subscribe((data: any[]) => {
       this.jsonData = data
-      console.log(this.jsonData);
     })
   }
 

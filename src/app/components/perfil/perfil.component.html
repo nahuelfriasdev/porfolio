@@ -11,9 +11,21 @@
       <p class="text-sm lg:text-balance lg:text-xl">
           También estoy dedicado al aprendizaje del idioma inglés, alcanzando un nivel B1. Para poder comunicarme de manera efectiva en un entorno global y acceder a recursos y conocimientos adicionales en el desarrollo de software.
       </p>
+
+      <ul class="flex flex-row gap-x-4 justify-center lg:hidden">
+        <li class="transform hover:scale-125 transition duration-300">
+          <a href="https://www.linkedin.com/in/nahuel-ezequiel-abel-frias/" target="_blank"><app-linkedin [wPadre]="25" [hPadre]="25"/></a>
+        </li>
+        <li class="transform hover:scale-125 transition duration-300">
+          <a href="https://github.com/nahuelfriasdev" target="_blank"><app-github [wPadre]="25" [hPadre]="25"/></a>
+        </li>
+        <li class="transform hover:scale-125 transition duration-300">
+          <a href="mailto:nahuelefrias00@gmail.com" target="_blank"><app-gmail [wPadre]="25" [hPadre]="25"/></a>
+        </li>
+      </ul>
     </div>
 
-    <div class="w-full flex flex-col gap-y-5 lg:w-[80%] justify-center">
+    <div class="w-full flex-col gap-y-5 justify-center hidden lg:w-[80%] lg:flex">
       <div class="flex justify-center">
         <img src="../../../assets/perfil.jpg" class="rounded-full w-48 h-48 lg:w-72 lg:h-72" alt="perfil">
       </div>

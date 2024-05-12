@@ -1,0 +1,50 @@
+[
+  {
+    "proyectos": [
+      {
+        "title": "PuertoKayak | Proyecto Propio",
+        "description": "Es una Web para la promocion y venta de actividades turisticas, para darle visibilidad y llegar a mas gente y que le sea mas sencillo el contratar los servicios, actualmente se encuentra en primera fase donde cuenta con lo necesario para poder promocionar los servicios, actualmente me encuentro trabajando en la parte de back-end con nodeJs para poder hacer que se pueda reservar los turnos y actividades mediante un form donde iran a una base de datos y habra un panel de control para el cliente donde pueda revisar los turnos tomados y pueda administrar los mismos",
+        "link": "https://puertokayak.netlify.app/",
+        "github": "#",
+        "image": "/projects/puertoKayak.webp"
+      },
+      {
+        "title": "PuertoKayak | Proyecto Propio",
+        "description": "Es una Web para la promocion y venta de actividades turisticas, para darle visibilidad y llegar a mas gente y que le sea mas sencillo el contratar los servicios, actualmente se encuentra en primera fase donde cuenta con lo necesario para poder promocionar los servicios, actualmente me encuentro trabajando en la parte de back-end con nodeJs para poder hacer que se pueda reservar los turnos y actividades mediante un form donde iran a una base de datos y habra un panel de control para el cliente donde pueda revisar los turnos tomados y pueda administrar los mismos",
+        "link": "https://puertokayak.netlify.app/",
+        "github": "#",
+        "image": "/projects/puertoKayak.webp"
+      },
+      {
+        "title": "PuertoKayak | Proyecto Propio",
+        "description": "Es una Web para la promocion y venta de actividades turisticas, para darle visibilidad y llegar a mas gente y que le sea mas sencillo el contratar los servicios, actualmente se encuentra en primera fase donde cuenta con lo necesario para poder promocionar los servicios, actualmente me encuentro trabajando en la parte de back-end con nodeJs para poder hacer que se pueda reservar los turnos y actividades mediante un form donde iran a una base de datos y habra un panel de control para el cliente donde pueda revisar los turnos tomados y pueda administrar los mismos",
+        "link": "https://puertokayak.netlify.app/",
+        "github": "#",
+        "image": "/projects/puertoKayak.webp"
+      },
+      {
+        "title": "PuertoKayak | Proyecto Propio",
+        "description": "Es una Web para la promocion y venta de actividades turisticas, para darle visibilidad y llegar a mas gente y que le sea mas sencillo el contratar los servicios, actualmente se encuentra en primera fase donde cuenta con lo necesario para poder promocionar los servicios, actualmente me encuentro trabajando en la parte de back-end con nodeJs para poder hacer que se pueda reservar los turnos y actividades mediante un form donde iran a una base de datos y habra un panel de control para el cliente donde pueda revisar los turnos tomados y pueda administrar los mismos",
+        "link": "https://puertokayak.netlify.app/",
+        "github": "#",
+        "image": "/projects/puertoKayak.webp"
+      },
+      {
+        "title": "PuertoKayak | Proyecto Propio",
+        "description": "Es una Web para la promocion y venta de actividades turisticas, para darle visibilidad y llegar a mas gente y que le sea mas sencillo el contratar los servicios, actualmente se encuentra en primera fase donde cuenta con lo necesario para poder promocionar los servicios, actualmente me encuentro trabajando en la parte de back-end con nodeJs para poder hacer que se pueda reservar los turnos y actividades mediante un form donde iran a una base de datos y habra un panel de control para el cliente donde pueda revisar los turnos tomados y pueda administrar los mismos",
+        "link": "https://puertokayak.netlify.app/",
+        "github": "#",
+        "image": "/projects/puertoKayak.webp"
+      }
+    ],
+    "trabajos": [
+      {
+        "title": "Trabajo uno | Trabajo Freelance",
+        "description": "Es una Web para la promocion y venta de actividades turisticas, para darle visibilidad y llegar a mas gente y que le sea mas sencillo el contratar los servicios, actualmente se encuentra en primera fase donde cuenta con lo necesario para poder promocionar los servicios, actualmente me encuentro trabajando en la parte de back-end con nodeJs para poder hacer que se pueda reservar los turnos y actividades mediante un form donde iran a una base de datos y habra un panel de control para el cliente donde pueda revisar los turnos tomados y pueda administrar los mismos",
+        "link": "https://puertokayak.netlify.app/",
+        "github": "#",
+        "image": "/projects/puertoKayak.webp"
+      }
+    ]
+  }
+]
