@@ -10,25 +10,32 @@
     </div>
     <h4 class="bg-black text-white text-center">Mis {{texto}}</h4>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-10 gap-x-10 gap-y-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-10 gap-10">
       
-      @for (data of jsonData; track $index) {
-        <div class="flex sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div class="p-4  sm:mb-0 mb-6 bg-slate-400">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
-            </div>
-            <h2 class="text-xl font-medium title-font text-white mt-5">{{data.title}}</h2>
-            <p class="text-base leading-relaxed mt-2">{{data.description}}</p>
-            <a href="{{data.link}}" target="_blank" class="text-black inline-flex items-center mt-3">Ir a la pagina
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
+      @if (proyectos && respuestaData[0].resProyectos === false) {
+        <h4>No hay proyectos actualmente</h4>
+        
+      }@else if (trabajos && respuestaData[1].resTrabajos === false) {
+        <h4>No hay Trabajos actualmente</h4>
       }
-      
+      @else {
+        @for (data of jsonData; track $index) {
+          <div class="flex sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4  sm:mb-0 mb-6 bg-slate-400">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
+              </div>
+              <h2 class="text-xl font-medium title-font text-white mt-5">{{data.title}}</h2>
+              <p class="text-base leading-relaxed mt-2">{{data.description}}</p>
+              <a href="{{data.link}}" target="_blank" class="text-black inline-flex items-center mt-3">Ir a la pagina
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        }
+      }
     </div>
 
     <p class="bg-black text-white text-center">paginacion para los proyectos  <-  -></p>

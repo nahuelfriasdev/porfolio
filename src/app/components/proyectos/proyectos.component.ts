@@ -2,7 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { SectionArticleComponent } from '../section-article/section-article.component';
 import { CommonModule } from '@angular/common';
 import { ServiceService } from '../../services/service.service';
-import { IProyectosData } from '../../models/proyectos.model'; // -> ver si con mas tiempo puedo aplicarlo al modelo sino lo vuelo
+import { IData, IMainData } from '../../models/proyectos.model'; // -> ver si con mas tiempo puedo aplicarlo al modelo sino lo vuelo
 
 @Component({
   selector: 'app-proyectos',
@@ -13,15 +13,20 @@ import { IProyectosData } from '../../models/proyectos.model'; // -> ver si con 
 })
 export class ProyectosComponent implements OnInit{
 
-  jsonData: Array<any> = []
+  jsonData: IData[] = []
   private _data = inject(ServiceService)
 
   proyectos: boolean = true
   trabajos: boolean = false
   texto: string = 'Proyectos'
+
+  respuestaData: Array<any> = [
+    {resProyectos: false},
+    {resTrabajos: false}
+  ]
+  
   
   ngOnInit(): void {
-    console.log("inicializando");
     this.updateData();
   }
 
@@ -39,12 +44,18 @@ export class ProyectosComponent implements OnInit{
   }
 
   updateData(): void {
-    this._data.getDataProyectos().subscribe((data: any[]) => {
-      const [respuesta] = data; // -> hago esto para evitar acceder al primer elemento de data con el [0] queda mas lindo asi :S
-      if(respuesta && this.proyectos == true) {
-        this.jsonData = respuesta.proyectos;
+    this._data.getDataProyectos().subscribe((data: IMainData) => {
+      
+       // -> hago esto para evitar acceder al primer elemento de data con el [0] queda mas lindo asi :S
+
+      if (Array.isArray(data) && data.length != 0) {
+        const [respuesta] = data;
+        this.respuestaData[0].resProyectos = respuesta.proyectos.length != 0
+        this.respuestaData[1].resTrabajos = respuesta.trabajos.length != 0
+
+        this.jsonData = respuesta && this.proyectos ? respuesta.proyectos : respuesta.trabajos
       } else {
-        this.jsonData = respuesta.trabajos;
+        console.error("No llego nunca la info, chequealo!")
       }
     });
   }
