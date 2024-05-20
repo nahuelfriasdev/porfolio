@@ -6,11 +6,12 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { CommonModule } from '@angular/common';
 import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NavBarComponent, PerfilComponent, ExperienciaComponent, ProyectosComponent, TecnologiasComponent],
+  imports: [CommonModule, RouterOutlet, NavBarComponent, PerfilComponent, ExperienciaComponent, ProyectosComponent, TecnologiasComponent, InicioComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

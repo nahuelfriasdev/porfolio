@@ -1,16 +1,13 @@
-<app-section-article>
-  <h2 class="text-3xl mb-4">Proyectos</h2>
+<app-section-article id="proyectos">
+  <div class="text-3xl flex mb-4">
+      <button [disabled]="proyectos" [ngClass]="{'underline-animation text-purple-500 active': proyectos, 'text-gray-500': !proyectos}" (click)="seleccion('proyectos')" class="px-2 py-1" [innerText]="'<Proyectos \\>'"></button>
+      <button [disabled]="trabajos" [ngClass]="{'underline-animation text-purple-500 active': trabajos, 'text-gray-500': !trabajos}" (click)="seleccion('trabajos')" class="px-2 py-1" [innerText]="'<Trabajos \\>'"></button>
+  </div>
   
   <article>
-    <div class="flex">
-      <p class="bg-gray-200 text-xl border border-black/30">
-        <button [disabled]="proyectos" [ngClass]="{'bg-purple-300 font-semibold': proyectos}" (click)="seleccion('proyectos')" class="px-2 py-1 border border-e-black" [innerText]="'<Proyectos \\>'"></button>
-        <button [disabled]="trabajos" [ngClass]="{'bg-purple-300 font-semibold': trabajos}" (click)="seleccion('trabajos')" class="px-2 py-1" [innerText]="'<Trabajos \\>'"></button>
-      </p>
-    </div>
-    <h4 class="bg-black text-white text-center">Mis {{texto}}</h4>
+    <h4 class="bg-purple-400 text-white text-center">Mis {{texto}}</h4>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-10 gap-10">
+    <div class="p-5 border border-purple-400 gap-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
       
       @if (proyectos && respuestaData[0].resProyectos === false) {
         <h4>No hay proyectos actualmente</h4>
@@ -38,7 +35,7 @@
       }
     </div>
 
-    <p class="bg-black text-white text-center">paginacion para los proyectos  <-  -></p>
+    <p class="bg-purple-400 text-white text-center">paginacion para los proyectos  <-  -></p>
   </article>
 
 </app-section-article>

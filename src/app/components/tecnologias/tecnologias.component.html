@@ -1,18 +1,23 @@
-<app-section-article>
-  <h2 class="text-3xl">Tecnologias</h2>
+<app-section-article id="tecnologias">
+  <h2 class="text-3xl mb-4 mt-4"><span class="text-purple-400">Mis</span> Tecnologias</h2>
 
-  <div class="grid grid-cols-5">
-    <app-github/>
-    <app-github/>
-    <app-github/>
-    <app-github/>
-    <app-github/>
-    <app-github/>
-    <app-github/>
-    <app-github/>
-    <app-github/>
-    <app-github/>
-    <app-github/>
-    <app-github/>
-  </div>
+    <article class="flex flex-col mb-10">
+        <div class="grid grid-cols-4 gap-5 lg:grid-cols-7 xl:grid-cols-9 xl:gap-4 w-[70%]">
+          <app-html [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-css [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-js [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-typescript [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-angular [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-laravel [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-tailwind [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-bootstrap [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-material [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-git [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-github [hPadre]="70" [wPadre]="70" class="flex flex-col items-center">GitHub</app-github>
+          <app-gitlab [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-sql [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-mongo [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+          <app-docker [hPadre]="70" [wPadre]="70" class="flex flex-col items-center"/>
+        </div>
+    </article>
 </app-section-article>
