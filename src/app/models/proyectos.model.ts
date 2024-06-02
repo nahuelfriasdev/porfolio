@@ -10,5 +10,6 @@ export interface IData {
   description: string ,
   link: string ,
   github: string ,
-  image:string  
+  image:string,
+  tech:string
 }

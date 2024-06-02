@@ -47,7 +47,7 @@ export class ProyectosComponent implements OnInit{
     this._data.getDataProyectos().subscribe((data: IMainData) => {
       
        // -> hago esto para evitar acceder al primer elemento de data con el [0] queda mas lindo asi :S
-
+      
       if (Array.isArray(data) && data.length != 0) {
         const [respuesta] = data;
         this.respuestaData[0].resProyectos = respuesta.proyectos.length != 0

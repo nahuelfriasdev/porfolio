@@ -2,11 +2,11 @@
   {
     "proyectos": [
       {
-        "title": "404 Not Found | Proyecto Propio",
-        "description": "Actualmente no se encuentran proyectos subidos",
-        "link": "https://puertokayak.netlify.app/",
+        "title": "TazzWebStudio | Proyecto Propio",
+        "description": "Mi página personal de servicios freelance, donde ofrezco soluciones creativas y eficientes para tus necesidades digitales. Este proyecto no solo es una vitrina de mis habilidades, sino también una plataforma profesional diseñada para conectar con clientes que buscan calidad y compromiso.",
+        "link": "https://tazzwebstudio.netlify.app/",
         "github": "#",
-        "image": "../../../assets/perro.jpg"
+        "image": "../assets/proyecto1.png"
       }
     ],
     "trabajos": [
